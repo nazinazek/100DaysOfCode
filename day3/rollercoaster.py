@@ -12,6 +12,9 @@ elif height >= 120:
             "Sorry, you are not old enough to ride this rollercoaster,"
             "you need to be 12 years old or older to ride this rollercoaster."
         )
-    elif age >= 12 and height >= 120:
+    elif age > 8 :
         print("Enjoy the ride!"
               "\nHave a good day!")
+        
+    else:
+        
