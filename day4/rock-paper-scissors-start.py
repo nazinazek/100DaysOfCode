@@ -41,12 +41,12 @@ if rock_paper_scissors[person] == rock_paper_scissors[computer]:
 elif rock_paper_scissors[person] == rock and rock_paper_scissors[computer] == scissors:
     print("You win.")
 elif rock_paper_scissors[person] == paper and rock_paper_scissors[computer] == scissors:
-    print("Computer win.")
+    print("You lose..")
 elif rock_paper_scissors[person] == scissors and rock_paper_scissors[computer] == rock:
-    print("Computer win.")
+    print("You lose..")
 elif rock_paper_scissors[person] == paper and rock_paper_scissors[computer] == rock:
     print("You win.")
 elif rock_paper_scissors[person] == rock and rock_paper_scissors[computer] == paper:
-    print("Computer win.")
+    print("You lose..")
 elif rock_paper_scissors[person] == scissors and rock_paper_scissors[computer] == paper:
     print("You win.")
