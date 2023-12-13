@@ -31,6 +31,7 @@ while not end_of_game:
 
     if guess in guessed:
         print(f"You've already entered the letter {guess}")
+        lives +=1
     guessed.append(guess)
 
     if guess not in chosen_word:
