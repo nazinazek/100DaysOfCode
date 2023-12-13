@@ -1,4 +1,4 @@
-
+import os
 import random
 import hangman_words
 import hangnam_art
@@ -17,7 +17,7 @@ print(hangnam_art.logo)
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-    
+    os.system('cls||clear')
     if guess in display:
         print(f"You've already guessed the letter {guess}")
     
@@ -28,11 +28,11 @@ while not end_of_game:
     
     if guess not in chosen_word:
         lives -=1
-        print(hangnam_art.stages[lives])
         print(f"The letter {guess} not in the chosen word. You've losed a life!")
         if lives == 0:
             end_of_game = True
             print("You lose.")
+    print(hangnam_art.stages[lives])
     print(f"{' '.join(display)}")
         
 
