@@ -13,15 +13,17 @@ while auction:
     bidders[name] = bid
     other_bidders = input("Are there any other bidders? Type 'yes' or 'no'.\n").lower()
     max_bid = 0
+    winner = ""
     if other_bidders == "yes":
         os.system('cls||clear')
     if other_bidders == "no":
+        os.system('cls||clear')
         for key in bidders:
             if bidders[key] > max_bid:
                 max_bid = bidders[key]
+                winner = key
         auction = False
-    os.system('cls||clear')
-    for key in bidders:
-        if max_bid == bidders[key]:
-            print(f"The winner is {key} with a bid of ${bidders[key]}.")
+        print(f"The winner is {winner} with a bid of ${max_bid}.")
+    
+    
         
